@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title%}
+首页
+{% endblock %}
+
+{% block menu%}
+{% for mm in m%}
+<li><a href="/{{ mm.slug }}"><span>{{  mm.name  }}</span></a></li>
+{% endfor %}
+{% endblock %}
+
+{% block slider %}
+{% for ss in s%}
+<div id="slider">
+      <div id="slider-holder">
+        <ul>
+          <li>
+            <div class="slide-info">
+              <p>{{ ss.content }}</p>
+              <a href="#" class="button-more">More</a> </div>
+            <div class="slide-image"> <img src="{{ ss.img }}" alt="" /> </div>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-nav"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a> </div>
+    </div>
+{% endfor %}
+
+{% endblock %}
+
+{% block main %}
+<div class="cols three-cols">
+      <div class="cl">&nbsp;</div>
+      <div class="col">
+        <h2>媒体报道</h2>
+        <h3>MONDAY AGAIN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue. Donec felis eros, luctus at blandit ac.</p>
+        <p><a href="#" class="more">查看更多</a></p>
+      </div>
+      <div class="col">
+        <h2>活动照片</h2>
+        <h3>WE DO THIS AND THAT....</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. </p>
+        <p><a href="#" class="more">查看更多</a></p>
+      </div>
+      <div class="col col-last">
+        <h2>作品展示</h2>
+        <h3>24/7 YES REALLY...</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue.</p>
+        <p><a href="#" class="more">查看更多</a></p>
+      </div>
+      <div class="cl">&nbsp;</div>
+    </div>
+    <!-- END Three Column Content -->
+    <!-- Two Column Content -->
+    <div class="cols two-cols">
+      <div class="cl">&nbsp;</div>
+      <div class="col">
+        <h2>Why Mondays?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue. Donec felis eros, luctus at blandit ac.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare consequat tortor quis porttitor. Aliquam sed fringilla arcu. Maecenas sit amet cursus augue. Donec felis eros, luctus at blandit ac.</p>
+        <p><a href="#" class="more">Learn more</a></p>
+      </div>
+      <div class="col col-last">
+        <h2>我们的优势</h2>
+        <p>从0岁到100岁，人人都要做手工，有手工就会有市场，手工有多少，市场就会有大。</p>
+        <p>产品营销和体验营销共存，既有生日礼品，又有生日DIY，双重赚钱通道。</p>
+        <p>产品独特，没有同比竞争，情感休闲消费,利润空间大，高达100%—500%，另外还有多种辅助服务利润</p>
+        <p>手工礼品，有无限扩大的空间基础，紧跟时尚，不断推陈出新。</p>
+        <p>......</p>
+        <p><a href="#" class="more">查看更多优势！</a></p>
+      </div>
+      <div class="cl">&nbsp;</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{% block title%}{% endblock %}</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+<script src="static/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="static/js/jquery-func.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page" class="shell">
+  <!-- Logo + Search + Navigation -->
+  <div id="top">
+    <div class="cl">&nbsp;</div>
+    <h1 id="logo"><a href="#"></a></h1>
+    <form action="#" method="post" id="search">
+      <!--<div class="field-holder">
+        <input type="text" class="field" value="Search" title="Search" />
+      </div>
+      <input type="submit" class="button" value="Search" />-->
+      <div class="cl">&nbsp;</div>
+    </form>
+    <div class="cl">&nbsp;</div>
+    <div id="navigation">
+      <ul>
+        {% block menu %}
+        {% endblock %}
+        
+      </ul>
+    </div>
+  </div>
+  <!-- END Logo + Search + Navigation -->
+  <!-- Header -->
+  <div id="header">
+    <!-- Slider -->
+    {% block slider %}
+    {% endblock %}
+    
+    <!-- END Slider -->
+  </div>
+  <!-- END Header -->
+  <!-- Main -->
+  <div id="main">
+    {% block main %}
+    {% endblock %}
+    <!-- Three Column Content -->
+    
+    <!-- END Two Column Content -->
+  </div>
+  <!-- END Main -->
+  <!-- Footer -->
+  <div id="footer">
+    <p class="right">&copy; 2010 - 巧艺手工坊</p>
+    <div class="cl">&nbsp;</div>
+  </div>
+  <!-- END Footer -->
+  <br />
+</div>
+</body>
+</html>
