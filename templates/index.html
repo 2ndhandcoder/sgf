@@ -11,22 +11,25 @@
 {% endblock %}
 
 {% block slider %}
-{% for ss in s%}
 <div id="slider">
+
       <div id="slider-holder">
         <ul>
-          <li>
+          
+{% for ss in s%}
+<li>
             <div class="slide-info">
               <p>{{ ss.content }}</p>
               <a href="#" class="button-more">More</a> </div>
             <div class="slide-image"> <img src="{{ ss.img }}" alt="" /> </div>
           </li>
-        </ul>
+        
+
+{% endfor %}
+</ul>
       </div>
       <div class="slider-nav"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a> </div>
     </div>
-{% endfor %}
-
 {% endblock %}
 
 {% block main %}

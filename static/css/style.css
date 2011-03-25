@@ -59,7 +59,7 @@ p { padding-bottom: 18px; }
 
 #header { padding-bottom: 10px; }
 
-#slider { height: 200px; background: url(images/slider.gif) no-repeat 0 0; position: relative; }
+#slider { height: 327px; background: url(images/slider.gif) no-repeat 0 0; position: relative; }
 #slider .slider-nav a { display: block; width: 18px; height: 49px; font-size: 0; line-height: 0; text-indent: -4000px; position: absolute; top: 120px; }
 #slider .slider-nav a.prev { left: 0; background: url(images/button-prev.gif); }
 #slider .slider-nav a.next { right: 0; background: url(images/button-next.gif); }

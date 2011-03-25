@@ -29,7 +29,7 @@ class Shows:
         self.content = content
         
 def Get_Menu():
-    rmenus = db.select('categories',where='parent = 0',order='order_id')
+    rmenus = db.select('categories',where='parent_id = 0',order='order_id')
     menus = []
     for menu in rmenus:
         menus += [Menu(menu.name,menu.slug)]
